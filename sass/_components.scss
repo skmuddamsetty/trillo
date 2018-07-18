@@ -1,7 +1,7 @@
 //LOGO
 .logo {
   height: 3.25rem;
-  margin-left: 3rem;
+  margin-left: 2rem;
 }
 
 //SEARCH BOX
@@ -53,21 +53,44 @@
 //USER NAV
 
 .user-nav {
-  background-color: peru;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  & > * {
+    padding: 0 2rem;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  & > *:hover {
+    background-color: var(--color-grey-light-2);
+  }
   &__icon-box {
+    position: relative;
   }
   &__notification {
+    font-size: 0.8rem;
+    height: 1.75rem;
+    width: 1.75rem;
+    border-radius: 100%;
+    background-color: var(--color-primary);
+    color: #fff;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   &__icon {
     height: 2.25rem;
     width: 2.25rem;
-  }
-  &__user {
+    fill: var(--color-grey-dark-2);
   }
   &__user-photo {
     height: 3.75rem;
     border-radius: 50%;
-  }
-  &__user-name {
+    margin-right: 1rem;
   }
 }
